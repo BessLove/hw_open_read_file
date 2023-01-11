@@ -27,6 +27,7 @@ def main(some_file: str) -> dict[str, list[dict[str]]]:
     vals = [_ for _ in list_ingreds]
     cook_book = dict(zip(keys, vals))
     return cook_book
+cook_book = main('text.txt')
 
 
-print(main('text.txt'))
+print(cook_book)
