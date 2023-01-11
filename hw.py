@@ -15,6 +15,7 @@ def dict_dish(some_list: list) -> list[dict[str]]:
     list_ingreds = []
     for i in some_list[2:]:
         ingred = dict(zip(['ingredient_name', 'quantity', 'measure'], i.split(' | ')))
+        ingred['quantity'] = int(ingred['quantity'])
         list_ingreds.append(ingred)
     return list_ingreds
 
@@ -30,4 +31,4 @@ def main(some_file: str) -> dict[str, list[dict[str]]]:
 cook_book = main('text.txt')
 
 
-print(cook_book)
+# print(cook_book)
