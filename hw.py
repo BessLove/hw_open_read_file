@@ -20,7 +20,7 @@ def dict_dish(some_list: list) -> list[dict[str]]:
 
 
 def main(some_file: str) -> dict[str, list[dict[str]]]:
-    '''Функция запускает программу'''
+    '''Функция запускает программу '''
     list_dish = file_read(some_file)
     list_ingreds = [dict_dish(i) for i in list_dish]
     keys = [_[0] for _ in list_dish]
