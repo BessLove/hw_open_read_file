@@ -14,5 +14,6 @@ def get_shop_list_by_dishes(dishes: list, person_count: int) -> dict[str: dict]:
         item['quantity'] *= 2
     return ingreds_to_buy
 
+
 pprint(get_shop_list_by_dishes(['Запеченный картофель', 'Омлет'], 2))
 
