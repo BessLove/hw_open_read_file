@@ -31,4 +31,4 @@ def main(some_file: str) -> dict[str, list[dict[str]]]:
 cook_book = main('text.txt')
 
 
-# print(cook_book)
+print(cook_book)
